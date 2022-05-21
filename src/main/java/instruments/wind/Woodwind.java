@@ -12,4 +12,9 @@ public class Woodwind extends Wind{
         super(name, instrumentType, subType, material, sound, pitch);
         this.reed = reed;
     }
+
+    public ReedType getReed() {
+        return reed;
+    }
+
 }

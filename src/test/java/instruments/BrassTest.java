@@ -41,7 +41,7 @@ public class BrassTest {
         assertEquals("Wah waaah", trombone.getSound());
     }
 
-        @Test
+    @Test
     public void hasPitch(){
         assertEquals(Pitch.Bb, trombone.getPitch());
     }
@@ -55,6 +55,5 @@ public class BrassTest {
     public void canPlay(){
         assertEquals("The trombone plays 'wah waaah'!", trombone.play());
     }
-
 
 }
