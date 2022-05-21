@@ -8,4 +8,8 @@ public class Keyboard extends Instrument{
         super(name, instrumentType, subType, material, sound);
         this.numberOfPedals = numberOfPedals;
     }
+
+    public int getNumberOfPedals() {
+        return numberOfPedals;
+    }
 }
