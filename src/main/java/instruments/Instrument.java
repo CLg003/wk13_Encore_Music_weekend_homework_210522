@@ -7,14 +7,14 @@ import java.util.ArrayList;
 
 public abstract class Instrument implements IPlay {
 
-    private String name;
+    private String instrumentName;
     private InstrumentType instrumentType;
     private SubType subType;
     private MaterialType material;
     private String sound;
 
-    public Instrument(String name, InstrumentType instrumentType, SubType subType, MaterialType material, String sound){
-        this.name = name;
+    public Instrument(String instrumentName, InstrumentType instrumentType, SubType subType, MaterialType material, String sound){
+        this.instrumentName = instrumentName;
         this.instrumentType = instrumentType;
         this.subType = subType;
         this.material = material;

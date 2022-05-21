@@ -12,12 +12,17 @@ public class AccessoryTest {
 
     @Before
     public void before(){
-        accessory = new Accessory("Vandoren no.3 Alto Sax reed", InstrumentType.WIND, SubType.WOODWIND);
+        accessory = new Accessory("No.3 Alto Sax reed", "Vandoren", InstrumentType.WIND, SubType.WOODWIND);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Vandoren no.3 Alto Sax reed", accessory.getName());
+        assertEquals("No.3 Alto Sax reed", accessory.getName());
+    }
+
+    @Test
+    public void hasBrand() {
+        assertEquals("Vandoren", accessory.getBrand());
     }
 
     @Test

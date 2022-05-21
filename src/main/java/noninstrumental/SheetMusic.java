@@ -13,4 +13,16 @@ public class SheetMusic {
         this.composer = composer;
         this.instrument = instrument;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getComposer() {
+        return composer;
+    }
+
+    public Instrument getInstrument() {
+        return instrument;
+    }
 }
