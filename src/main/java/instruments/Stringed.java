@@ -10,4 +10,12 @@ public class Stringed extends Instrument{
         this.numberOfStrings = numberOfStrings;
         this.electric = electric;
     }
+
+    public int getNumberOfStrings() {
+        return numberOfStrings;
+    }
+
+    public boolean isElectric() {
+        return electric;
+    }
 }
