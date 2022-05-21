@@ -1,6 +1,6 @@
 package instruments.wind;
 
-public enum PitchType {
+public enum Pitch {
     A,
     Bb,
     Eb,
