@@ -7,12 +7,24 @@ import instruments.SubType;
 public class Accessory {
 
     private String name;
-    private InstrumentType forInstrumentType;
-    private SubType forSubType;
+    private InstrumentType instrumentType;
+    private SubType subType;
 
-    public Accessory(String name, InstrumentType forInstrumentType, SubType forSubType){
+    public Accessory(String name, InstrumentType instrumentType, SubType subType){
         this.name = name;
-        this.forInstrumentType = forInstrumentType;
-        this.forSubType = forSubType;
+        this.instrumentType = instrumentType;
+        this.subType = subType;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public InstrumentType getInstrumentType() {
+        return instrumentType;
+    }
+
+    public SubType getSubType() {
+        return subType;
     }
 }

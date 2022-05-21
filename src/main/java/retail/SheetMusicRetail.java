@@ -17,8 +17,8 @@ public class SheetMusicRetail implements ISell {
         this.sellingPrice = sellingPrice;
     }
 
-    public BigDecimal calculateMarkup() {
-        return sellingPrice - buyingPrice;
-    }
+//    public BigDecimal calculateMarkup() {
+//        return sellingPrice - buyingPrice;
+//    }
 
 }
