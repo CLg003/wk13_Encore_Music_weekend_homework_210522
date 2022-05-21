@@ -1,3 +1,5 @@
+package noninstrumental;
+
 import instruments.InstrumentType;
 import instruments.SubType;
 import noninstrumental.Accessory;

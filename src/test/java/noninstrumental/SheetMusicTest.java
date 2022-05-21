@@ -1,3 +1,5 @@
+package noninstrumental;
+
 import instruments.*;
 import noninstrumental.SheetMusic;
 import org.junit.Before;
