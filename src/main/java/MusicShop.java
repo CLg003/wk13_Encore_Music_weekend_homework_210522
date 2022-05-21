@@ -24,14 +24,15 @@ public class MusicShop {
         stock.remove(retailItem);
     }
 
-//    public BigDecimal calculateTotalPotentialProfit(){
-//        BigDecimal totalPotentialProfit = new BigDecimal(0.00);
-//        for (ISell stockItem : stock){
-//            BigDecimal sellingPrice = stockItem.getSellingPrice();
-//            BigDecimal buyingPrice = stockItem.getBuyingPrice();
-//            BigDecimal itemMarkup =  stockItem.getSellingPrice().subtract(buyingPrice).setScale(2, RoundingMode.HALF_UP);
-//
-//        }
+    public BigDecimal calculateTotalPotentialProfit(){
+        BigDecimal totalPotentialProfit = new BigDecimal(0.00);
+        for (ISell stockItem : stock){
+            BigDecimal sellingPrice = stockItem.getSellingPrice().setScale(2, RoundingMode.HALF_UP);
+            BigDecimal buyingPrice = stockItem.getBuyingPrice().setScale(2, RoundingMode.HALF_UP);
+            BigDecimal itemMarkup =  sellingPrice.subtract(buyingPrice).setScale(2, RoundingMode.HALF_UP);
+            totalPotentialProfit = totalPotentialProfit.add(itemMarkup).setScale(2, RoundingMode.HALF_UP);
+        }
+        return totalPotentialProfit;
 
 
     }

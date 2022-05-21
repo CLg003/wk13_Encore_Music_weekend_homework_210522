@@ -75,4 +75,12 @@ public class MusicShopTest {
         assertEquals(1, musicShop.getStock().size());
     }
 
+    @Test
+    public void canCalculateTotalPotentialProfit(){
+        musicShop.addItemToStock(stockPiano);
+        musicShop.addItemToStock(stockSheetMusic);
+        musicShop.addItemToStock(stockGuitarStrings);
+        assertEquals(7008.29, musicShop.calculateTotalPotentialProfit().doubleValue(), 0.0);
+    }
+
 }
