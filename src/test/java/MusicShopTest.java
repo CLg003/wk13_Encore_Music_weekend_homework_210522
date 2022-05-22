@@ -42,11 +42,13 @@ public class MusicShopTest {
         guitarStringsBuyingPrice = new BigDecimal(4.50);
         guitarStringsSellingPrice = new BigDecimal(9.79);
         stockGuitarStrings = new StockAccessory("Set of Gibson electric guitar strings", guitarStrings, guitarStringsBuyingPrice, guitarStringsSellingPrice);
+
         // piano - stock instrument
         piano = new Keyboard("Piano", InstrumentType.KEYBOARD, SubType.PIANO, MaterialType.WOOD, "Plinky plonk", 2);
         pianoBuyingPrice = new BigDecimal(20000.00);
         pianoSellingPrice = new BigDecimal(27000.00);
         stockPiano = new StockInstrument("Steinway concert grand piano", piano, pianoBuyingPrice, pianoSellingPrice);
+
         // movie favourites - stock sheet music
         electricKeyboard = new Keyboard("Electric Keyboard", InstrumentType.KEYBOARD, SubType.KEYBOARD, MaterialType.PLASTIC, "Dinky donk", 0);
         movieFavourites = new SheetMusic("Movie Favourites", "John Williams", electricKeyboard);
@@ -63,8 +65,7 @@ public class MusicShopTest {
     @Test
     public void canAddItemToStock(){
         musicShop.addItemToStock(stockPiano);
-        musicShop.addItemToStock(stockSheetMusic);
-        assertEquals(2, musicShop.getStock().size());
+        assertEquals(1, musicShop.getStock().size());
     }
 
     @Test

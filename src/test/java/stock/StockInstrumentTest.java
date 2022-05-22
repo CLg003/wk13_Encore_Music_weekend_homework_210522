@@ -23,6 +23,10 @@ public class StockInstrumentTest {
         stockPiano = new StockInstrument("Steinway concert grand piano", piano, buyingPrice, sellingPrice);
     }
 
+
+
+
+
     @Test
     public void hasDescription(){
         assertEquals("Steinway concert grand piano", stockPiano.getDescription());
